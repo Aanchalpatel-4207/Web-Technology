@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let vegetables = ["Potato", "Tomato", "Onion"]
+
+        document.write("Original array: " + vegetables);
+        document.write("<br/>");
+
+        document.write("Before push: " + vegetables);
+        vegetables.push("Carrot");
+        document.write("<br/>");
+        document.write("After push: " + vegetables);
+
+        document.write("<br/>");
+
+        document.write("Before pop: " + vegetables);
+        vegetables.pop();
+        document.write("<br/>");
+        document.write("After pop: " + vegetables);
+
+        document.write("<br/>");
+
+        document.write("Before shift: " + vegetables);
+        vegetables.shift();
+        document.write("<br/>");
+        document.write("After shift: " + vegetables);
+
+        document.write("<br/>");
+
+        document.write("Before unshift: " + vegetables);
+        vegetables.unshift("Cucumber");
+        document.write("<br/>");
+        document.write("After unshift: " + vegetables);
+
+        document.write("<br/>");
+
+        document.write("Before sort: " + vegetables);
+        vegetables.sort();
+        document.write("<br/>");
+        document.write("After sort: " + vegetables);
+
+        document.write("<br/>");
+
+        document.write("Before splice: " + vegetables);
+        vegetables.splice(2,1,"Cabbage");
+        document.write("<br/>");
+        document.write("After splice: " + vegetables);
+
+        document.write("<br/>");
+    </script>
+</body>
+</html>

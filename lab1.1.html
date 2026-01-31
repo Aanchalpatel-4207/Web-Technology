@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const num1 = parseFloat(prompt("Enter num1="));
+        const num2 = parseFloat(prompt("Enter num2="));
+        const operation = prompt("Enter operation=(+,-,*,/,)=");
+
+        let result;
+
+        switch(operation)
+        {
+            case "+":
+                result = num1 + num2;
+                break;
+
+            case "-":
+                result = num1 - num2;
+                break;
+
+            case "*":
+                result = num1 * num2;
+                break;
+                
+            case "/":
+                result = num1 / num2;
+                break;
+        }
+
+        document.write("result="+result);
+    </script>
+</body>
+</html>

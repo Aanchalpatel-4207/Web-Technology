@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const n = parseFloat(prompt("Enter n="));
+
+        if(n>=10 && n<=99)
+        {
+            let firstDigit = Math.floor(n/10);
+            let secondDigit = n%10;
+            let result = firstDigit ** secondDigit;
+
+            document.write("Result=" + result);
+        }
+        
+    </script>
+</body>
+</html>

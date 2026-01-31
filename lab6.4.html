@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onreset="alert('Reset callesd.')" onsubmit="alert('Submit called.')">
+
+        Fname:<input type="text" onfocus="alert('Focused event called.')">
+        Lname:<input type="text" onblur="alert('Blur event called.')">
+        Address:<input type="textarea" onselect="alert('Select event called.')">
+
+        <select name="" id="" onchange="alert('Onchange called.')">
+
+            <option value="">a</option>
+            <option value="">b</option>
+
+        </select>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+        
+    </form>
+</body>
+</html>

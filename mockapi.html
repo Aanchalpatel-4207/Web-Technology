@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="loadstudent()">Click</button>
+    <div id="loadDiv"></div>
+    <script>
+        function loadstudent() {
+
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                data = JSON.parse(this.responseText);
+                console.log(data);
+                formatedStudents = data.map((s) => {
+
+
+                let ans = "<tr>";
+
+                ans += "<td>";
+                ans += s.Name;
+                ans += "</td>";
+                ans += "<td>";
+                ans += s.RollNo;
+                ans += "</td>";
+
+                ans += "<td>";
+                ans += s.createdAt;
+                ans += "</td>";
+
+                ans += "</tr>";
+                return ans;
+                
+           });
+
+
+            document.getElementById("loadDiv").innerHTML = "<table border='1' " + "<th>" + "Name" + "</th>" + "<th>" + "Roll No" + "</th>" + "<th>" + "Date" + "</th>" + formatedStudents.join("") + "</table>"
+
+
+            }
+            xhttp.open("GET", "https://688309e621fa24876a9c5c06.mockapi.io/Student", true);
+            xhttp.send();
+        }
+
+
+    </script>
+</body>
+
+</html>

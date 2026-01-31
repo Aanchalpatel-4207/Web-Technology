@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <SCript>
+
+        // Object Destructuring
+
+        students =
+        {
+            name: 'Aanchal',
+            age: 18,
+            spi: 7.8,
+            department: 'CE'
+        }
+
+        const{name, age} = students;
+
+        console.log("Name: " + name);
+        console.log("Age: " + age);
+
+        // Array Destructuring
+
+        const stu = ['Aanchal', 28, 6.8, 'CSE']
+
+        let [name, age, spi, department] = stu
+
+        name = stu[0];
+        age = stu[1];
+        department = stu[2];
+
+        console.log("Name: " + name);
+        console.log("Age: " + age);
+        console.log("Departmnet: " + department);
+
+    </SCript>
+</body>
+</html>
